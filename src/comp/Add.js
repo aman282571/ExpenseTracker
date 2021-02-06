@@ -16,10 +16,10 @@ import {Addcontext} from '../App'
             <h4>Add New Transaction</h4>
             <form onSubmit={call}>
            <h5>Text</h5> 
-           <input type="text" onChange={(e)=>change({...add,text: e.target.value})} placeholder="enter text..."/>
+           <input type="text" required="required" onChange={(e)=>change({...add,text: e.target.value})} placeholder="enter text..."/>
 
            <h5 id="h5">Amount  </h5> 
-           <input type="number"  onChange={(e)=>change({...add,amount:e.target.value})} placeholder="enter amount..."/><br/>
+           <input type="number" required="required" onChange={(e)=>change({...add,amount:e.target.value})} placeholder="enter amount..."/><br/>
            <input type="submit" value="ADD TRANSACTION"></input>
            </form>
         </div>
